@@ -171,8 +171,8 @@ void WidgetCows::victory(){
 
 void WidgetCows::newrecord(){
     bool ok;
-        QString name = QInputDialog::getText(this, tr("QInputDialog::getText()"),
-                                             tr("User name:"), QLineEdit::Normal,
+        QString name = QInputDialog::getText(this, tr("Рекорд!"),
+                                             tr("Ваше имя:"), QLineEdit::Normal,
                                              QDir::home().dirName(), &ok);
         if (ok && !name.isEmpty()){
         QMultiMap<int, QString>::iterator it = rec.end()-1;
